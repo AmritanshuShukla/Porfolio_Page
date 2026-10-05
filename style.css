@@ -1,0 +1,184 @@
+/* ---------- Basic setup ---------- */
+
+/* Makes width and padding easier to work with */
+* {
+  box-sizing: border-box;
+}
+
+/* Settings for the whole page */
+body {
+  background-color: #e8ece1;
+  /* page background */
+  color: #1e2b24;
+  /* main text color */
+  font-family: "Hanken Grotesk", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Links */
+a {
+  color: #1e2b24;
+}
+
+a:hover {
+  color: #b98a1e;
+  /* gold color when you hover */
+}
+
+.profile{
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr;
+  margin-bottom: 10px;
+}
+
+img{
+  height: 150px;
+  width: 150px;
+  border: 1px solid black;
+  border-radius: 2px;
+}
+
+/* ---------- Layout ---------- */
+
+/* The box that holds all the content, centered on the page */
+.wrap {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+
+/* ---------- Top section (name and menu) ---------- */
+
+.intro h1 {
+  font-family: "Young Serif", Georgia, serif;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 1.1;
+  margin: 0 0 20px 0;
+}
+
+.role {
+  color: black;
+  margin: 0;
+}
+
+/* Puts the menu links side by side */
+.intro nav {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.intro nav a {
+  color: #5c6b61;
+  text-decoration: none;
+}
+
+.intro nav a:hover {
+  color: #1e2b24;
+  text-decoration: underline;
+}
+
+
+/* ---------- Sections ---------- */
+
+section {
+  margin-top: 70px;
+}
+
+h2 {
+  font-family: "Young Serif", Georgia, serif;
+  font-weight: normal;
+  font-size: 28px;
+  margin: 0 0 20px 0;
+}
+
+h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+
+/* ---------- Skills ---------- */
+
+/* Puts the three skill columns side by side */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  /* columns drop down on small screens */
+  gap: 40px;
+}
+
+.skills ul {
+  list-style: none;
+  /* removes bullet points */
+  margin: 10px 0 0 0;
+  padding: 0;
+  color: #5c6b61;
+}
+
+
+/* ---------- Work and Experience lists ---------- */
+
+.rows {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #c5cdbe;
+}
+
+.rows li {
+  padding: 20px 0;
+  border-bottom: 1px solid #c5cdbe;
+}
+
+.when {
+  color: #5c6b61;
+  font-size: 15px;
+}
+
+.rows p {
+  color: #5c6b61;
+  margin: 5px 0 0 0;
+}
+
+
+/* ---------- Contact ---------- */
+
+.mail {
+  font-family: Georgia, serif;
+  font-size: 26px;
+}
+
+.contact ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+
+/* ---------- Footer ---------- */
+
+footer {
+  margin-top: 60px;
+  color: #5c6b61;
+  font-size: 15px;
+}
+
+
+/* ---------- Small screens (phones) ---------- */
+
+@media (max-width: 600px) {
+  .intro h1 {
+    font-size: 44px;
+  }
+
+  .intro nav {
+    flex-wrap: wrap;
+    /* menu links wrap onto a new line if needed */
+  }
+}
